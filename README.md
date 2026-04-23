@@ -6,6 +6,52 @@ The filesystem stores named files in Pico flash. Flash is the non-volatile memor
 
 In this worksheet, I built the flash filesystem layer and connected it to the required API. I also added tests and documentation so the behaviour can be checked on the Pico over serial.
 
+## Demo Recording
+
+The working demo video is stored in this repository:
+
+- `demo/worksheet-filesystem-demo.mov`
+- [Open the demo video](demo/worksheet-filesystem-demo.mov)
+
+<video src="demo/worksheet-filesystem-demo.mov" controls width="100%">
+  Your browser may not preview MOV files. Open demo/worksheet-filesystem-demo.mov directly.
+</video>
+
+This recording shows the worksheet running on the Raspberry Pi Pico. The Pico has been flashed with the UF2 firmware, then the serial terminal is opened so the test runner output can be seen.
+
+What is happening in the recording:
+
+1. The firmware starts on the Pico.
+2. USB serial connects to the host computer.
+3. `main.c` calls `fs_run_tests()` because `RUN_FS_TESTS` is enabled.
+4. The filesystem tests run one by one.
+5. Each successful test prints `PASS: test_name`.
+6. The full run ends with `FS_TEST_RESULT: PASS`.
+7. After the tests, the Pico stays alive and prints `FS_TEST_IDLE`.
+
+What the important output means:
+
+| Output in the demo | What it means |
+| --- | --- |
+| `fs: formatted 448 blocks (444 data blocks)` | The filesystem formatted the normal Pico flash region. There are 444 blocks available for file data. |
+| `PASS: truncate_mode` | Opening a file with `w` correctly cleared the old file content. |
+| `PASS: read_beyond_eof` | Reading after the end of a file correctly returned `0`. |
+| `fs: invalid open mode: q` | The test deliberately tried an unsupported mode. The filesystem rejected it. |
+| `PASS: invalid_open_mode` | The invalid mode test passed because the filesystem returned an error. |
+| `fs: empty filename` | The test deliberately tried an empty path. The filesystem rejected it. |
+| `fs: subdirectories are not supported: dir/file.txt` | The filesystem only supports one root directory. Subdirectories are intentionally rejected. |
+| `PASS: invalid_path` | Invalid paths were handled correctly. |
+| `fs: formatted 7 blocks (3 data blocks)` | The out-of-space test temporarily shrank the filesystem to 3 data blocks. |
+| `fs: out of data blocks` | The test filled the tiny filesystem and confirmed that the error is detected. |
+| `PASS: out_of_space` | The filesystem handled out-of-space correctly. |
+| `FS_TEST_RESULT: PASS` | All tests passed. This is the main success line. |
+| `FS_TEST_END` | The test runner finished. |
+| `FS_TEST_IDLE` | The Pico is still running after the tests. |
+
+Some lines look like errors, but they are expected. The test runner deliberately triggers bad inputs so it can prove the filesystem rejects them safely. The important point is that each deliberate error is followed by a `PASS:` line.
+
+This demo proves that the worksheet code is not just compiled. It is running on the Pico, using real flash operations, printing over USB serial, and passing the filesystem tests.
+
 ## Overview
 
 This repo implements a FAT-style filesystem. FAT means File Allocation Table. A FAT stores links between blocks, so one file can use more than one flash block.
@@ -1077,3 +1123,4 @@ These are the files I worked with for the worksheet implementation. The filesyst
 | `main.c` | Pico entry point, USB setup, test call, and idle heartbeat. |
 | `pico_sdk_import.cmake` | Pico SDK import script. |
 | `TESTING.md` | Extra testing notes. |
+| `demo/worksheet-filesystem-demo.mov` | Screen recording of the Pico serial test run passing. |
