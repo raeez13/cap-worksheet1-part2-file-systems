@@ -1092,20 +1092,7 @@ The forced 3 block region makes out-of-space predictable.
 
 This test set proves the main worksheet behaviours. It covers small files, multi-block files, seeking, appending, truncating, EOF, invalid input, and a full filesystem.
 
-## Worksheet checklist
 
-- [x] Simple filesystem OR FAT-style selected: FAT-style is used.
-- [x] `fs_open` implemented.
-- [x] `fs_close` implemented.
-- [x] `fs_read` implemented.
-- [x] `fs_write` implemented.
-- [x] `fs_seek` implemented.
-- [x] Modes supported and documented.
-- [x] Error handling documented.
-- [x] Testing documented.
-- [x] Documentation included.
-
-This checklist is my summary of what I completed for the worksheet. Every checked item is backed by code in this repository and by the serial test runner.
 
 ## Key files
 
