@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/CMakeFiles/picotoolBuild
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/CMakeFiles/picotoolBuild.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/CMakeFiles/picotoolBuild-complete.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

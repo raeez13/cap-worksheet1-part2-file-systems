@@ -1,0 +1,14 @@
+# Target labels
+ picotool-populate
+# Source files and their labels
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate-complete.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-build.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-configure.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-download.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-install.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-mkdir.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-patch.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-test.rule
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/picotool-populate-prefix/src/picotool-populate-stamp/picotool-populate-update.rule

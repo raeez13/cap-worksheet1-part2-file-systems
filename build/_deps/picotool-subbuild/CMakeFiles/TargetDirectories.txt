@@ -1,0 +1,3 @@
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
+/Users/raeezjaldin/Desktop/COMPSCI YEAR 3/Communications and Protocols /worksheet1b/build/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir
